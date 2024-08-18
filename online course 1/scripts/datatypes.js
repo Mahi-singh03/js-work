@@ -1,4 +1,4 @@
-// PREMITIVE DATATYPES ARE OF 7 TYPES :
+//                       PREMITIVE DATATYPES ARE OF 7 TYPES :
 
 // Number
 // String
@@ -8,7 +8,13 @@
 // BigInt
 // Symbol
 
-//NON PREMITIVE DATATYPES ARE :
+
+
+
+
+
+
+//                           NON PREMITIVE DATATYPES ARE :
 
 // 1) OBJECT
 // IS IS COLLECTIONS OF NON PREMITIVE DATATYPES IN FORM OF KEY VALE PAIRS
