@@ -1,0 +1,35 @@
+console.log("WAY OF DEFINIG A variable");
+
+{
+var a = 100;
+// WITH RESERVE WORD VAR YOU CAN REDEFINE AND ALSO UPDATE THE VARIABLE
+
+// UPDATING VALUE OF a
+a=200;
+
+//REDEFINIG THE VALUE OF a
+var a=500;
+console.log(a)
+
+}
+
+
+
+{
+let x=34;
+// WITH LET RESERVE WORD  YOU CAN UPDATE THE VARIABLE BUT CANNOT BE REDEFINE
+
+// UPDATING VALUE OF a
+x=56;
+console.log(x);
+console.log(typeof(x));
+}
+
+
+
+
+{
+const y = "MAHI";
+// WITH CONSTANT RESERVE WORD YOU CONNOT WPDATE OF REDEFINE THE VARIABLES
+console.log(y)
+}
