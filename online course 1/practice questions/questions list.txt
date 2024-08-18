@@ -1,0 +1,2 @@
+Q 1 : Get the usere input of a number from the user using prompt to cheack is 
+    the entered number is multiple of 5.
