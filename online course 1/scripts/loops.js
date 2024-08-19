@@ -55,7 +55,7 @@
 
 
 //      EXAPMLES OF for for-in loop
-//  use in  object and arrays , it is used to get the keys of objects.
+//  use in  object , it is used to get the keys of objects.
 
 // const std ={
 //       name : "mahi sinhg",

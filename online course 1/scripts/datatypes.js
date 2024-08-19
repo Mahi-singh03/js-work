@@ -16,7 +16,7 @@
 
 //                           NON PREMITIVE DATATYPES ARE :
 
-// 1) OBJECT
+// 1) OBJECT   { Array are also object but a special tye of  object }
 // IS IS COLLECTIONS OF NON PREMITIVE DATATYPES IN FORM OF KEY VALE PAIRS
 
 const my_self = {
