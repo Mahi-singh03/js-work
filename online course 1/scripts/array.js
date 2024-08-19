@@ -27,6 +27,28 @@ let marks =[ 34 ,56 ,67,87,97];
 //     console.log(marks[i]);
 // };
 
-for ( let i of marks){
-    console.log(i);
-}
+// for ( let i of marks){
+//     console.log(i);
+// }
+
+
+
+
+
+
+//                             ARRAY METHODS
+//  PUSH()
+//  POP()
+//  TO STRING()
+
+
+let num = [1 ,2, 3, 4, 5, 6];
+console.log(num);
+
+
+num.push(7, 8, 9,);
+console.log(num);
+
+
+num.pop(9);
+console.log(num);

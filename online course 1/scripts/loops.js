@@ -43,6 +43,7 @@
 
 //      EXAPMLES OF for for-of loop
 // used for iteration in the  array and strings
+// it doent suppord indexing
 
 // let str = "mahi singh";
 
