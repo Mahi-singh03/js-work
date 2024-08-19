@@ -1,4 +1,7 @@
 Q 1 : Get the usere input of a number from the user using prompt to cheack is 
     the entered number is multiple of 5.
-Q 1 : Get the usere input of a number N from the user using prompt and add the 
+Q 2 : Get the usere input of a number N from the user using prompt and add the 
     number form 1 to N.
+Q 3 : print all the even and odd number from  0 to 100.
+Q 4 : let the game number be 7 , create a program to make the user  gess the game 
+    number from 1 to 10.
