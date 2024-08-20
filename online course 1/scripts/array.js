@@ -46,8 +46,8 @@
 //  array.slice(start index, ending index)           { return new array }
 //  array.splice(index, delCount, new elemnts)  { use 0 to leave empty }
 
-let num = [1 ,2, 3, 4, 5, 6];
-console.log(num);
+// let num = [1 ,2, 3, 4, 5, 6];
+// console.log(num);
 
 //EXAMPLES OF ARRAY METHODS :
 
@@ -81,3 +81,69 @@ console.log(num);
 
 // num.splice(3,2,"mahi","singh")
 // console.log(num)
+
+
+
+
+// -----------------------------------------------------------------------------------------
+
+//                                      ADVANCE ARRAY METHODS
+
+// array.foreach loop
+// array.map  { same as foreach loop but returns new array by return }
+// array.filter  { returens a array filtered according to new array }
+// array.reduce { it accepts a large array and reduce to }
+
+
+
+
+
+//     EXAMPLES OF foreach loop
+
+
+//   SYNTEX - array.foreach(call back function)
+//  AVAILABLE PARAMETERS ARE VALUES, INDEX AND ARRAY ITSELF;
+
+// let array =[ 1, 2, 3, 4]
+
+
+// array.forEach(function print (val, index){
+//     console.log(val ,index);
+// })
+
+
+
+
+
+//    EXAMPLES OF FILTER MATHODS
+
+
+// let num = [ 1, 2, 3, 4, 5, 6, 7];
+
+// function even(i){
+//     return i%2 ===0;
+// }
+
+// evenArray=num.filter(even)
+// console.log(evenArray)
+
+
+
+
+
+
+
+
+//   EXAMPLES OF ARRAY.REDUCE
+
+
+// num = [ 1, 2, 3,];
+
+
+// function Summ (first,last){
+//     return first + last
+// }
+
+// let result = num.reduce(Summ);
+
+// console.log(result);

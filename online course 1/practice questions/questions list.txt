@@ -12,4 +12,7 @@ Q 6 : if you are given Array of Marks [30, 56, 78, 99, 34, 54, 67]  find the avc
 Q 7 : the price of the goods are [ 670 ,355, 546, 637, 636, 456, 67]. if 50% discount 
     is applied to each good ,what is the final price also change the array according
     to the new prices. 
-Q 8 : create a function  that take a string and returns number of vowals
+Q 8 : create a function  that take a string and returns number of vowals.
+Q 9 : for given array of number , print the square of each number sing foreach loop.
+Q 10 : from array of number returns the largest number from array ( hint : usr ternary 
+    conditional operators.)
