@@ -16,3 +16,6 @@ Q 8 : create a function  that take a string and returns number of vowals.
 Q 9 : for given array of number , print the square of each number sing foreach loop.
 Q 10 : from array of number returns the largest number from array ( hint : usr ternary 
     conditional operators.)
+Q 11 : we are given marks of student in an array . filter out student who scored 90+.
+Q 12 : take N from the user. create an array  from 1 to N. then reduce the array to 
+    the sum of array. 
