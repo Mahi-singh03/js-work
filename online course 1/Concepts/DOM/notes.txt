@@ -1,0 +1,27 @@
+USE consol.dir(--) to print the selected item as the objectfa-spin
+USE consol.log(--) to print the selected item as whole.                                 
+                                   
+                                    DOM MANIPULATION:
+
+ways for accessing the element :
+
+( 1 ) select with id
+     -> document.getElementByid("MyId") 
+( 2 ) select with class
+     -> document.getElementByClassName("MyClass") 
+( 3 ) select with tag
+     -> document.getElementByid("tag") 
+
+
+( 4 ) Queryselector
+     -> document.Queryselector(  "tag"  ||  ".clss"  ||  "#id") 
+
+
+ 
+properties :
+
+
+( 1 ) tagName { returns tag for the element node}
+( 2 ) innerText { returns the text content of the element and its children }
+( 3 ) inner HTML { return the plane text or html content in the elemrnt}
+( 4 ) inner text {  returns textual content even for hidden element }
