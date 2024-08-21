@@ -19,3 +19,5 @@ Q 10 : from array of number returns the largest number from array ( hint : usr t
 Q 11 : we are given marks of student in an array . filter out student who scored 90+.
 Q 12 : take N from the user. create an array  from 1 to N. then reduce the array to 
     the sum of array. 
+Q 13 : create a new button element. give it a text "mahi", background colour red and
+    the text colour white. insert the button as the first element inside the body tag.
