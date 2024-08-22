@@ -23,3 +23,5 @@ Q 13 : create a new button element. give it a text "mahi", background colour red
     the text colour white. insert the button as the first element inside the body tag.
 Q 14 : Create a <p> tag in html it a class & some style. create a new class in the 
     CSS and try to append thid class to the <p> element.
+Q 15 : create a toggle button which on click  changes screen to the dark and on 
+    clicking again changes to the  light mode.

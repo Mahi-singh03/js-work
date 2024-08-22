@@ -34,6 +34,13 @@ multiply(3,5);
 //EXAMPLES OF ARROW FUNCTIONS
 // USED FOR SMALL TASKS
 
+
+
+
+//syntex :
+
+//function-name = ( variables, variables ....) =>{  function to be perform   }
+
 //examples 1)
 
 sum=(a,b) =>(
