@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+.op-div{
+    width:50vp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.u{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+.c{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+ h3{
+    width: 100%;
+    text-align: center;
+ }
+.op{
+    height: 100px;
+    width: 100px;
+}
+.score{
+    margin-top: 20px;
+    background-color: rgb(151, 233, 205);
+    display: flex;
+    float: left;
+}
+p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sco{
+    width: 150px;
+    border: solid 1px black;
+}
