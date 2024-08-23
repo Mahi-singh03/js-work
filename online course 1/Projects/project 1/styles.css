@@ -1,17 +1,17 @@
 body{
-    background-color: rgb(251, 251, 251);
+    background-color: rgb(246, 245, 245);
 }
 
 
 /* main heading */
 h1{
     text-align: center;
-    color: #000000;
+    color: #dd299e;
 }
 
-p{
+.info{
     text-align: center;
-    color: rgb(253, 14, 166);
+    color: rgb(83, 62, 143);
     font-size: 20px;
 }
 
@@ -36,26 +36,25 @@ p{
     height: 75px;
     border-radius: 1pc;
     margin: 5px;
-    background-color: #c7e75e;
+    background-color: #93dfd0;
     border: none;
 } 
 
-.f1{
+.btnRED{
     font-size: 65px;
-    color:#ef0909;
+    color:#ff0000;
 }
-.f2{
+.btnBLUE{
     font-size: 65px;
     color: #0911ef; 
 
 }
-.w1{
-    color: #f40808; 
-  
+.infoRED{
+     color: #ff0000; 
+   
 }
-.w2{
-    color:  #0911ef; 
-    
+.infoBLUE{
+    color:  #0008ff;     
 }
 
 
@@ -71,8 +70,8 @@ p{
     border-radius: 1pc;
     height: 50px;
     width: 110px;
-    color: #ef0479;
+    color: #db2f85;
     border: none;
-    background-color: #e4d6d6;
+    background-color: #f7dbdb;
     font-size: larger;
 }

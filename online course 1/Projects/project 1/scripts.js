@@ -7,7 +7,7 @@ let info=document.querySelector(".info")
 // console.dir(Gbtn);
 // console.dir(Rbtn);
 
-let p1 = true //p1 is first user
+let p1 = false //p1 is first user
 
 // storing the wining pattern in 2D array
 
@@ -24,31 +24,39 @@ let win = [
 
 //ading eventListners gor each button:
 
+
+//creating a function for cheacking the win patterns
+
 Gbtn.forEach((btn) => {
    
-    btn.addEventListener("click",()=>{
-        
+    btn.addEventListener("click",()=>{ 
     if(p1){
-        btn.classList.add("f2")  //addinf f1 class for red colured text
         btn.innerText="O"
-        info.innerText="Second User's Turn"
+        btn.classList.add("btnBLUE")  //addinf f1 class for red colured text
+        info.classList.add("infoRED")
+        info.innerText="1st User's Turn"
         p1=false
+        btn.classList.remove("btnRED")
+        info.classList.remove("infoBLUE")
     }
     else{
-        info.innerText="First User's Turn"
-        btn.classList.add("f1") //addinf f1 class for blue colured text
+        info.innerText="2nd User's Turn"
         btn.innerText="X"
+        btn.classList.add("btnRED") //addinf f1 class for blue colured text
+        info.classList.add("infoBLUE")
         p1=true
+        btn.classList.remove("btnBLUE")
+        info.classList.remove("infoRED")
     }
+    winner();   
+    console.log(p1)
    
-    winner();
-    btn.disabled=true // disble button to diable double click
+    Gbtn.disabled=true // disble button to diable double click
     })
-   
+
 })
 
 
-//creating a function for cheacking the win patterns
 
 const winner= ()=>{
     // console.log("hanji dosto");
@@ -70,18 +78,23 @@ const winner= ()=>{
                 console.log("jit gaye maharaj tusi")
                 bdy.style.backgroundColor=" #98FB98";
                 if(p1==true){
-                    info.innerText="User 1 wins"
-                    info.classList.add("w1")
+
+                    info.classList.remove("infoBLUE")
+                    info.classList.add("infoRED")
+                    info.innerText="2nd User wins"    
                 }
                 else{
-                    info.innerText="User 2 wins"
-                    info.classList.add("w2")
+                    info.classList.add("infoBLUE")
+                    info.innerText="1st User wins"
                 }
                 diable();
             }
         }
     }
 }
+
+
+
 
 // function to diable all button after winner is announced
 
@@ -93,7 +106,7 @@ diable= () =>{
 
 
 
-// function to enable all button for new game
+//function to enable all button for new game
 enable= () =>{
     for(j of Gbtn){
        j.disabled=false;
@@ -111,7 +124,7 @@ enable= () =>{
 Rbtn.addEventListener("click",()=>{
     enable();
     info.innerText="First User's Turn"
-    p1==true
-
+    p1 = false
+    bdy.style.backgroundColor=" #FFFFFF"
 })
-console.log(Rbtn)
+
