@@ -81,11 +81,11 @@ const winner= ()=>{
 
                     info.classList.remove("infoBLUE")
                     info.classList.add("infoRED")
-                    info.innerText="2nd User wins"    
+                    info.innerText="2nd User Wins"    
                 }
                 else{
                     info.classList.add("infoBLUE")
-                    info.innerText="1st User wins"
+                    info.innerText="1st User Wins"
                 }
                 diable();
             }
