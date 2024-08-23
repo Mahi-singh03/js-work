@@ -1,7 +1,78 @@
 body{
-    background-color: aqua;
+    background-color: rgb(251, 251, 251);
 }
+
+
+/* main heading */
 h1{
     text-align: center;
-    margin-top: 30px;
+    color: #000000;
+}
+
+p{
+    text-align: center;
+    color: rgb(253, 14, 166);
+    font-size: 20px;
+}
+
+/* main game formating */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 75px;
+    height: 75px;
+    border-radius: 1pc;
+    margin: 5px;
+    background-color: #c7e75e;
+    border: none;
+} 
+
+.f1{
+    font-size: 65px;
+    color:#ef0909;
+}
+.f2{
+    font-size: 65px;
+    color: #0911ef; 
+
+}
+.w1{
+    color: #f40808; 
+  
+}
+.w2{
+    color:  #0911ef; 
+    
+}
+
+
+/* Reset button */
+.R-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.R-btn{
+    margin-top: 20px;
+    border-radius: 1pc;
+    height: 50px;
+    width: 110px;
+    color: #ef0479;
+    border: none;
+    background-color: #e4d6d6;
+    font-size: larger;
 }
