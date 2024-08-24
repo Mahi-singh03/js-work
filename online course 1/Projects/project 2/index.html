@@ -7,32 +7,48 @@
     <title>Game</title>
 </head>
 <body>
-    <h1> Rock Parper Seasor</h1>
     <main>
+
+        <!-- Main Heading -->
+        <h1 class = "M-Heading"> Rock Parper Seasor</h1>
+
+        <!-- Game Options Divs -->
         <div class="op-div">
+            <!-- User Game Choice Div -->
             <div class="u">
-                    <h3>Your Pic</h3>
-                <image id = "p" class="op" src="images/paper.png"></image>
-                <image id = "r" class="op" src="images/rock.png"></image>
-                <image id = "s" class="op" src="images/seasor.jpg"></image>
+                <h3>Your Choice</h3>
+                <image id = "0" class="op opU" src="images/paper.png"></image>
+                <image id = "1" class="op opU" src="images/rock.png"></image>
+                <image id = "2" class="op opU" src="images/seasor.png"></image>
             </div>
+
+            <!-- Computer Choice Div -->
             <div class="c">
-                    <h3>Computer pic</h3>
+                <h3>Computer's Choice</h3>
                 <image id = "p" class="op" src="images/paper.png"></image>
                 <image id = "r" class="op" src="images/rock.png"></image>
-                <image id = "s" class="op" src="images/seasor.jpg"></image>
+                <image id = "s" class="op" src="images/seasor.png"></image>
             </div>
             
+            <!-- Info Div -->
+            <div class="MDiv">
+                <p class ="P-MDiv">PLPAYER 1 PLAY KARO</p>
+            </div>
+
+
+            <!-- Score Board -->
             <div class="score">
                 <div class="sco">
                     <p><b>YOU</b></p>
-                    <p>0</p>
+                    <p id="UScore">0</p>
                 </div>
                 <div class="sco">
                      <p><b>COMPUTER</b></p>
-                    <p>0</p>
+                    <p id="CScore">0</p>
                 </div>
             </div>
+            
+
 
 
         </div>
