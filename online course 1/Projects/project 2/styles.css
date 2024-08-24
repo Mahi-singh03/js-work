@@ -21,46 +21,6 @@ body{
 
 /* Game Options Div */
 
-.op-div{
-    width:50vp;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-h3{
-    width: 100%;
-    text-align: center;
- } 
-.op{
-    height: 100px;
-    width: 100px;
-
-}
-.opU:hover{
-    height: 120px;
-    width:120px;
-}
-/* FOR USER */
-.u{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 170px;
-}
-/* FOR COMPUTER */
-.c{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap
-}
- 
-
-
 
 
 

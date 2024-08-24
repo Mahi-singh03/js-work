@@ -19,6 +19,10 @@
 // 1) OBJECT   { Array are also object but a special tye of  object }
 // IS IS COLLECTIONS OF NON PREMITIVE DATATYPES IN FORM OF KEY VALE PAIRS
 
+
+// PROTOTYPE (12)classes
+
+
 const my_self = {
     FullName : "mahi singh",
     gender : "male",
