@@ -7,7 +7,7 @@ Q 4 : let the game number be 7 , create a program to make the user  gess the gam
     number from 1 to 10.
 Q 5 : Ask the user to input his fullname and the faviourite number the create the 
     user name for website ( eg : @fmahisingh23 )
-Q 6 : if you are given Array of Marks [30, 56, 78, 99, 34, 54, 67]  find the avcerage
+Q 6 : if you are given Array of Marks [30, 56, 78, 99, 34, 54, 67]  find the average
     of marks.
 Q 7 : the price of the goods are [ 670 ,355, 546, 637, 636, 456, 67]. if 50% discount 
     is applied to each good ,what is the final price also change the array according

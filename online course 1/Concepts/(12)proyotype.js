@@ -1,6 +1,8 @@
 //                          Objects
 // a javv script object is an entity  having state and behaviour 
 
+// use "this" keywors for normal normal function.
+
 //                        Proto types:
 // js object has a special property called prototype.
 //   * if object & a Prototype have same method , object method is used.
@@ -36,23 +38,23 @@
 
 // step 1 ) creating the  tex object storeing GST rates.
 const tex = {
-    low_sel : low_sel=()=>{
+    low_sel: ()=>{
     console.log("10%")
     return 0.10
     },
-    heigh_sel : heigh_sel=()=>{
+    heigh_sel: ()=>{
     console.log("18%")
     return 0.18
     }
 } //Step 2 ) claculating tax of mahi and singh  using functions from tax objects
 const mahi ={
     salery : "heigh",
-    text_to_paid : heigh_sel()
+    text_to_paid : tex.heigh_sel()
 }
 
 const singh ={
     salery : "low",
-    text_to_paid : low_sel()      
+    text_to_paid : tex.low_sel()      
 }
 
 // Step 3 ) declaring tex object as prototypes in mahi and singh object so that 
