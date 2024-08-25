@@ -27,3 +27,8 @@ Q 15 : create a toggle button which on click  changes screen to the dark and on
     clicking again changes to the  light mode.
 Q 16: let say you are given with a array of name. you have to console the "goos bye"
     to the console ifthe name in array starts with "j" or "J" else print hello with name.
+Q 17: create a class for the school to store the to store the name, class and branch of 
+    the student and also create the view information function to conole the information 
+    of the student. 
+Q 18: create the a class called principal inharited from the staff. also ad the function 
+    that allow the principle to edit the data.
