@@ -2,14 +2,35 @@
 
 h1{
     text-align: center;
-    color: rgb(237, 56, 116);
+    color: rgb(255, 217, 0);
+    text-shadow: 2px 2px black
 }
 
 
 body{
-    background-color: rgb(213, 239, 230);
+    background-color: rgb(111, 160, 179);
 }
 
+
+
+
+
+
+
+.P-MDivU{
+    border: 1px solid black;
+    background-color: rgb(18, 123, 228);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.MDivU{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
 
 
 
@@ -18,9 +39,10 @@ body{
 
 /* game divs */
 
-h3{              
+
+#U{
     text-align: center;
-    color: rgb(23, 114, 139);
+    color: rgb(228, 31, 110);
 }
 .user{    
     display: flex;
@@ -36,7 +58,7 @@ h3{
 .img:hover{
     height: 100px;
     width: 100px;
-    opacity: 60%;
+    opacity: 40%;
 }
 
 .img{
@@ -44,21 +66,27 @@ h3{
     width: 80px;
 }
 
-/* for computer */
-.computer{
-   display: flex;
-   justify-content: center;
+
+
+
+
+
+
+
+.P-MDiv{
+    border: 1px solid black;
+    background-color: rgb(170, 22, 186);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
 }
-.imgC{
-    height: 80px;
-    width: 80px;
+
+.MDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
-
-
-
-
-
-
 
 
 
@@ -83,20 +111,30 @@ h2{
 .score{
     margin-top: 1px;
     display: flex;
-    background-color: #d29b9b;
     justify-content: center;
+    border-radius: 25px;
 }
 p{  
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
 }
-.sco{
+.scoC{
     width: 150px;
-    border: solid 1px black;
+    border-radius: 25px;
+    background-color: rgb(234, 124, 124);
 }
-
-
+.scoU{
+    width: 150px;
+    border-radius: 25px;
+    background-color:rgb(119, 209, 119);
+}
+#CScore{
+    font-size: x-large;
+}
+#UScore{
+    font-size: x-large;
+}
 
 
 

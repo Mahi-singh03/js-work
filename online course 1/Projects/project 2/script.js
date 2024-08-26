@@ -4,20 +4,25 @@ let CompScore = 0;
 let choices = document.querySelectorAll(".img");
 info = document.querySelector(".P-MDiv")
 bdy = document.querySelector("body")
+View_Uscore = document.querySelector("#UScore")
+View_Cscore = document.querySelector("#CScore")
+
+ComD = document.querySelector(".P-MDivU")
 
 
 const compChoice = () => {
-    let option =["im_R","im_P","im_S"];
+    let option =["ROCK","PAPER","SCISSORS"];
     let random = Math.floor(Math.random()*3)
     if (random==0){
         console.log("0")
-        
     }else if(random==1){
         console.log("1")
     }else{
         console.log("2")
     }
+    ComD.innerText= `Compter Choosed ${option[random]}`
     return option[random];
+
 }
 
 choices.forEach((ch) => {
@@ -39,12 +44,12 @@ game = (userChoice) => {
         draw();
     } else {
         let W = true;
-        if (u == "im_R") {
-            W = c == "im_P" ? false : true;
-        } else if (u == "im_P") {
-            W = c == "im_S" ? false : true;
+        if (u == "ROCK") {
+            W = c == "PAPER" ? false : true;
+        } else if (u == "PAPER") {
+            W = c == "SCISSORS" ? false : true;
         } else {
-            W = c == "im_R" ? false : true;
+            W = c == "ROCK" ? false : true;
         }
         console.log(W)
         winner(W);
@@ -62,8 +67,17 @@ draw= () => {
 winner=(W)=>{
    if(W==true){
     console.log("YOU WIN")
+    UserScore=UserScore+1
+    View_Uscore.innerText = UserScore
+    info.innerText="YOU WIN"
+    bdy.style.backgroundColor= "rgb(137, 241, 128)"
+
    }else{
     console.log("COMPUTER WIN")
+    CompScore=CompScore+1
+    View_Cscore.innerText = CompScore
+    info.innerText="YOU LOSE, COMPUTER WINS"
+    bdy.style.backgroundColor= "rgb(190, 44, 18)"
    }
 }
 
