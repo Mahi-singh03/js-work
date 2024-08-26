@@ -31,29 +31,26 @@ choices.forEach((ch) => {
 
 
 game = (userChoice) => {
-    u = userChoice
-    c = compChoice()
-    console.log("user",u)
-    console.log("comp",c)
-    if( u==c ){
-      
+    u = userChoice;
+    c = compChoice();
+    console.log("user", u);
+    console.log("comp", c);
+    if (u == c) {
         draw();
-    
-    }
-    else{
-        
-        let W = true
-        
-        if(u=="im_R"){
-            W = c =="im_P"? false : true
-        }else if (u=="im_P"){
-            W = c =="im_S"? false : true
-        }else{
-            W = c =="im_R"? false: true
+    } else {
+        let W = true;
+        if (u == "im_R") {
+            W = c == "im_P" ? false : true;
+        } else if (u == "im_P") {
+            W = c == "im_S" ? false : true;
+        } else {
+            W = c == "im_R" ? false : true;
         }
-         winner(W);
+        console.log(W)
+        winner(W);
     }
 }
+
 
 
 draw= () => {
@@ -63,10 +60,10 @@ draw= () => {
 
 }
 winner=(W)=>{
-   if(W=true){
-    console.log("COMPUTER WIN")
-   }else{
+   if(W==true){
     console.log("YOU WIN")
+   }else{
+    console.log("COMPUTER WIN")
    }
 }
 
