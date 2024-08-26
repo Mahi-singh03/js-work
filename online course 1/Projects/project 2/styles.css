@@ -2,16 +2,13 @@
 
 h1{
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: rgb(237, 56, 116);
 }
 
 
-/* 
 body{
-    /* background-color: greenyellow; */
-    /* background-color: #c43333;
+    background-color: rgb(213, 239, 230);
 }
- */ 
 
 
 
@@ -19,21 +16,49 @@ body{
 
 
 
-/* Game Options Div */
+/* game divs */
 
-
-
-
-/* Messege Div */
-
-.MDiv{
-    width: 100%;
+h3{              
+    text-align: center;
+    color: rgb(23, 114, 139);
 }
-.P-MDiv{
-    color: #fb0202;
-    font-size: larger;
-    font-weight: 1000;
+.user{    
+    display: flex;
+    justify-content: center;
 }
+.IMG{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img:hover{
+    height: 100px;
+    width: 100px;
+    opacity: 60%;
+}
+
+.img{
+    height: 80px;
+    width: 80px;
+}
+
+/* for computer */
+.computer{
+   display: flex;
+   justify-content: center;
+}
+.imgC{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
+
 
 
 
@@ -44,13 +69,24 @@ body{
 
 /* Score card */
 
+h2{
+    text-align: center;
+}
+
+
+.MScD{
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+}
+
 .score{
     margin-top: 1px;
-    background-color: rgb(236, 224, 170);
     display: flex;
-    float: left;
+    background-color: #f4f2a1;
+    justify-content: center;
 }
-p{
+p{  
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;

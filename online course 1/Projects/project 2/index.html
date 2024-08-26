@@ -10,51 +10,44 @@
     <main>
 
         <!-- Main Heading -->
-        <h1 class = "M-Heading"> Rock Parper Seasor</h1>
+        <h1 class = "M-Heading"> Rock-Parper-Seasors</h1>
 
         <!-- Game Options Divs -->
         <div class="op-div">
-            <!-- User Game Choice Div -->
-            <div class="u">
-                <h3>Your Choice</h3>
-                    <div class="OD"><image id = "0" class="opu opU " src="images/paper.png"></image></div>
-                    <div class="OD"><image id = "1" class="opu opU " src="images/rock.png"></image></div>
-                    <div class="OD"><image id = "2" class="opu opU " src="images/seasor.png"></image></div>
-            </div>
-            
-            <!-- Computer Choice Div -->
+        <h3> COMPUTER CHOICE </h3>
+        <div class="computer">
+            <div class="IMG"><img id="im_R_C" class="imgC" src ="images/rock.png"><img></div>
+            <div class="IMG"><img id="im_P_C" class="imgC" src ="images/paper.png"><img></div>
+            <div class="IMG"><img id="im_S_C" class="imgC" src ="images/seasor.png"><img></div>
+        </div>
+        <h3> USER CHOICE</h3>
+        <div class="user">
+            <div class="IMG"><img id="im_R" class ="img" src ="images/rock.png"><img></div>
+            <div class="IMG"><img id="im_P" class ="img" src ="images/paper.png"><img></div>
+            <div class="IMG"><img id="im_S" class ="img" src ="images/seasor.png"><img></div>
+        </div>       
+        <!-- Info Div -->
+        <div class="MDiv">
+            <h2 class ="P-MDiv">PLPAYER 1 PLAY KARO</h2>
+        </div>
 
 
-
-            <!-- <div class="c">
-                <h3>Computer's Choice</h3>
-                <image id = "p" class="op" src="images/paper.png"></image>
-                <image id = "r" class="op" src="images/rock.png"></image>
-                <image id = "s" class="op" src="images/seasor.png"></image>
-            </div> -->
-            
-            <!-- Info Div -->
-            <div class="MDiv">
-                <p class ="P-MDiv">PLPAYER 1 PLAY KARO</p>
-            </div>
-
-
-            <!-- Score Board -->
+        
+        <!-- Score Board Div-->
+        <div class="MScD">
             <div class="score">
                 <div class="sco">
                     <p><b>YOU</b></p>
                     <p id="UScore">0</p>
                 </div>
                 <div class="sco">
-                     <p><b>COMPUTER</b></p>
+                    <p><b>COMPUTER</b></p>
                     <p id="CScore">0</p>
                 </div>
             </div>
-            
-
-
-
         </div>
+        
+
     </main>
 
     <script src="script.js"></script>
