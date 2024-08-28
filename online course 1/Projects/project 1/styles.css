@@ -6,13 +6,27 @@ body{
 /* main heading */
 h1{
     text-align: center;
-    color: #dd299e;
+    color: #f907b1;
+    text-shadow: 2PX 1PX black;
+    font-size: 45px;
 }
 
 .info{
     text-align: center;
-    color: rgb(83, 62, 143);
-    font-size: 20px;
+    color: rgb(68, 0, 255);
+    font-size: 40px;
+    background-color: #51d7bc;
+    padding-left: 40px;
+    padding-right: 30px;
+    border-radius: 30px;
+    box-shadow: 1px 1px black;
+    margin-bottom: 30px;
+}
+.pOuter{
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* main game formating */
@@ -20,6 +34,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .game{
@@ -36,8 +51,9 @@ h1{
     height: 75px;
     border-radius: 1pc;
     margin: 5px;
-    background-color: #93dfd0;
-    border: none;
+    background-color: #b7d68b;
+    border: 0;
+    box-shadow: 1px 1px black;
 } 
 
 .btnRED{
@@ -74,4 +90,5 @@ h1{
     border: none;
     background-color: #f7dbdb;
     font-size: larger;
+    box-shadow: 1px 1px black;
 }
