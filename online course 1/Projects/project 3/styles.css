@@ -3,9 +3,21 @@ h2{
 }
 
 body{
-    background-color: rgb(206, 240, 238);
+    background-color: rgb(228, 244, 188);
 }
 
+.input{
+    color: #FFFFFF;
+    font-size: 45px;
+    text-shadow: 2px 2px black;
+    text-overflow: clip;
+    padding-left: 10px;
+}
+.input::placeholder {
+    color: #ffffff;
+    font-size: 45px;
+    text-align: justify;
+}
 .cal{
     display:grid;
     justify-self:center;
