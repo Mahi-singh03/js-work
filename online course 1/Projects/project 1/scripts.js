@@ -123,7 +123,7 @@ enable= () =>{
 
 Rbtn.addEventListener("click",()=>{
     enable();
-    info.innerText="First User's Turn"
+    info.innerText="1st User's Turn"
     p1 = false
     bdy.style.backgroundColor=" #FFFFFF"
 })

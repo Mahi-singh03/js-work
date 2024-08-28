@@ -7,7 +7,7 @@ body{
 h1{
     text-align: center;
     color: #f907b1;
-    text-shadow: 2PX 1PX black;
+    text-shadow: 2PX PX black;
     font-size: 45px;
 }
 
@@ -20,7 +20,6 @@ h1{
     padding-right: 30px;
     border-radius: 30px;
     box-shadow: 1px 1px black;
-    margin-bottom: 30px;
 }
 .pOuter{
     height: 78px;
