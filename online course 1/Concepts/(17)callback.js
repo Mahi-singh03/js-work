@@ -140,8 +140,6 @@
 
 
 
-
-
 //  Callback hell
 
 // it is when callbacks are nested one anoth forming a pyramis called pyramis of Doom
