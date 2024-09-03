@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(149, 225, 225);
+    background-color: rgb(169, 190, 227);
 }
 main{
     display: flex;
@@ -63,7 +63,7 @@ main{
     background-color: rgb(225, 197, 251);
 }
 #amount{
-    padding-top: 20px;
+    padding-top: 10px;
     display: block;
     text-align: center;
     font-size: larger;
@@ -73,7 +73,7 @@ main{
 input{
     display: block;
     width: 240px;
-    height: 30px;
+    height: 25px;
     margin-left: 35px;
     border: 0px;
     border-bottom: 2px solid black;
@@ -98,6 +98,7 @@ input::placeholder{
 #arrow{
     height: 30px;
 
+
 }
 
 select{
@@ -110,6 +111,7 @@ select{
 select:optional{
     text-align: center;
     font-weight: 8000;
+    font-weight: 700;
 }
 
 
@@ -117,7 +119,7 @@ select:optional{
 
 
 .from{
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,13 +132,14 @@ select:optional{
 p{
     padding-left: 20px;
     margin: 10px;
+    font-weight: 800;
 }
 
 
 
 
 .to{
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +160,8 @@ p{
 .result{
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: x-large;
 }
 .convert{
     display: flex;
@@ -165,11 +170,12 @@ p{
 }
 .btn{
     border: 0;
-    height: 30px;
+    height: 40px;
     width: 140px;
-    background-color: blanchedalmond;
+    background-color: rgb(236, 227, 146);
     box-shadow: 2px 2px black;
     border-radius: 45px;
+    font-weight: 600;
     border: 1px solid black;
 }
 
