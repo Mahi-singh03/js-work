@@ -103,7 +103,7 @@
 // let a = 4;
 // let b = 5;
 // let c = 6;
-// let d = "4";
+// let d = "4"
 
 // console.log( " a = 4 , b = 4 , c = 6 ");
 // console.log( "a==b = ", a==b);
@@ -111,6 +111,7 @@
 // console.log( "a=!b = ", a=!b);
 // console.log( "a==string(4) = ", a==d);
 // console.log( "4==string(4) = ", 4==d);
+// console.log( "4=='4' = ", 4=="4")
 
 // console.log( "4===string(4) = ", 4===d);
 

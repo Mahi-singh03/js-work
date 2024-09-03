@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(189, 236, 236);
+    background-color: rgb(149, 225, 225);
 }
 main{
     display: flex;
@@ -102,8 +102,8 @@ input::placeholder{
 
 select{
     width: 180px;
-    height: 25px;
-    border-radius: 20px;
+    height: 30px;
+    border-radius: 10px;
     background-color: rgb(156, 241, 241);
 }
 

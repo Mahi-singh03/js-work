@@ -160,16 +160,14 @@ const countryList = {
     ZWD: "ZW",
 };
 
-
-const API_KEY = "985df8f85e27517f5f4d4705"
-const API_URL = "https://v6.exchangerate-api.com/v6/"
-
-
+const API_KEY = "985df8f85e27517f5f4d4705";
+const API_URL = "https://v6.exchangerate-api.com/v6/";
 
 const options = document.querySelectorAll(".to select, .from select");
 const btn = document.querySelector("button");
 const FC = document.querySelector(".from select");
 const TC = document.querySelector(".to select");
+const Input = document.querySelector("input[name='amount']");
 
 for (let select of options) {
   for (let currCode in countryList) {
@@ -205,29 +203,32 @@ btn.addEventListener("click", async (e) => {
     amountInput.value = "1";
   }
 
-  const fromCurrency = FC.value.toLowerCase(); // Get user selected currencies (lowercase)
-  const toCurrency = TC.value.toLowerCase();
+  const fromCurrency = FC.value;
+  const toCurrency = TC.value;
 
   // Construct the API URL with user selections and API key
-  const url = `${API_URL}${API_KEY}/latest/${fromCurrency}`; 
+  const url = `${API_URL}${API_KEY}/pair/${fromCurrency}/${toCurrency}`;
 
   try {
     const response = await fetch(url);  // Fetch conversion rates from API
     const data = await response.json();  // Parse response as JSON
 
-    if (data.success) {
-      const conversionRate = data.conversion_rates[toCurrency];  // Get rate for selected "to" currency
+    if (data.result === "success") {
+      const conversionRate = data.conversion_rate;  // Get rate for selected "to" currency
       const convertedAmount = amount * conversionRate;  // Calculate converted amount
+      console.log(convertedAmount)
 
       // Update the result section with converted amount and formatted currency codes
-      const resultDiv = document.querySelector(".result");
-      resultDiv.innerText = `${amount.toFixed(2)} ${fromCurrency.toUpperCase()} = ${convertedAmount.toFixed(2)} ${toCurrency.toUpperCase()}`;
+      document.querySelector(".result").innerText = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
     } else {
       console.error("Error fetching conversion rates:", data.error);
       // Handle API errors (optional: display an error message to the user)
+      document.querySelector(".result").innerText = "Error fetching conversion rates.";
     }
   } catch (error) {
     console.error("Error fetching conversion rates:", error);
     // Handle network errors (optional: display an error message to the user)
+    document.querySelector(".result").innerText = "Network error. Please try again later.";
   }
 });
+
