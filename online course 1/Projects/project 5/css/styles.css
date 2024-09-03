@@ -74,7 +74,7 @@ input{
     display: block;
     width: 240px;
     height: 30px;
-    margin-left: 30px;
+    margin-left: 35px;
     border: 0px;
     border-bottom: 2px solid black;
     background-color: rgb(225, 197, 251);
@@ -170,6 +170,7 @@ p{
     background-color: blanchedalmond;
     box-shadow: 2px 2px black;
     border-radius: 45px;
+    border: 1px solid black;
 }
 
 

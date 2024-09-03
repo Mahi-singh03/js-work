@@ -1,7 +1,3 @@
-console.log("mahi")
-const API = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd/ins.json"
-
-
 const countryList = {
     AED: "AE",
     AFN: "AF",
@@ -162,16 +158,76 @@ const countryList = {
     ZAR: "ZA",
     ZMK: "ZM",
     ZWD: "ZW",
-  };
+};
+
+
+const API_KEY = "985df8f85e27517f5f4d4705"
+const API_URL = "https://v6.exchangerate-api.com/v6/"
+
+
 
 const options = document.querySelectorAll(".to select, .from select");
-
+const btn = document.querySelector("button");
+const FC = document.querySelector(".from select");
+const TC = document.querySelector(".to select");
 
 for (let select of options) {
-    for (let currCode in countryList) {
-        let option = document.createElement("option");
-        option.innerText = currCode;
-        option.value = currCode;
-        select.append(option);
+  for (let currCode in countryList) {
+    let option = document.createElement("option");
+    option.innerText = currCode;
+    option.value = currCode;
+    if (select.name === "from" && currCode === "USD") {
+      option.selected = "selected";
+    } else if (select.name === "to" && currCode === "INR") {
+      option.selected = "selected";
     }
+    select.append(option);
+  }
+  select.addEventListener("change", (evt) => {
+    updateFlag(evt.target);
+  });
 }
+
+function updateFlag(element) {
+  const currencyCode = element.value;
+  const countryCode = countryList[currencyCode];
+  const flagUrl = `https://flagsapi.com/${countryCode}/flat/64.png`;
+  const flagImg = element.parentElement.querySelector("img");
+  flagImg.src = flagUrl;
+}
+
+btn.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const amountInput = document.querySelector("input[name='amount']");
+  let amount = amountInput.value;
+  if (amount === "" || amount < 1) {
+    amount = 1;
+    amountInput.value = "1";
+  }
+
+  const fromCurrency = FC.value.toLowerCase(); // Get user selected currencies (lowercase)
+  const toCurrency = TC.value.toLowerCase();
+
+  // Construct the API URL with user selections and API key
+  const url = `${API_URL}${API_KEY}/latest/${fromCurrency}`; 
+
+  try {
+    const response = await fetch(url);  // Fetch conversion rates from API
+    const data = await response.json();  // Parse response as JSON
+
+    if (data.success) {
+      const conversionRate = data.conversion_rates[toCurrency];  // Get rate for selected "to" currency
+      const convertedAmount = amount * conversionRate;  // Calculate converted amount
+
+      // Update the result section with converted amount and formatted currency codes
+      const resultDiv = document.querySelector(".result");
+      resultDiv.innerText = `${amount.toFixed(2)} ${fromCurrency.toUpperCase()} = ${convertedAmount.toFixed(2)} ${toCurrency.toUpperCase()}`;
+    } else {
+      console.error("Error fetching conversion rates:", data.error);
+      // Handle API errors (optional: display an error message to the user)
+    }
+  } catch (error) {
+    console.error("Error fetching conversion rates:", error);
+    // Handle network errors (optional: display an error message to the user)
+  }
+});
