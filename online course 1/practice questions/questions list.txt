@@ -30,5 +30,5 @@ Q 16: let say you are given with a array of name. you have to console the "good 
 Q 17: create a class for the school to store the to store the name, class and branch of 
     the student and also create the view information function to conole the information 
     of the student. 
-Q 18: create the a class called principal inharited from the staff. also ad the function 
+Q 18: create the a class called principal inharited from the staff. also add the function 
     that allow the principle to edit the data.
