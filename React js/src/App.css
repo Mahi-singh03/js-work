@@ -6,6 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navbar-brand{
+  font-weight: 600;
+  color: white;
+}
+nav{
+display: flex;
+justify-content: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
