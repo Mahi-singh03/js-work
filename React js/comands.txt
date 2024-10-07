@@ -6,3 +6,7 @@ To crete the new react app:
       * { use " . " at hte place of "my-app" to create the app inside the current folder}
       * { the name of the app canot contain capital letters }
 
+To start the server :
+ 
+Step [1] : open the integrarted terminal in the app folder
+step [2] : type the comand " npm start "

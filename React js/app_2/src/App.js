@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import './game.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1>TIC TAC TOE</h1>
+    <div class ="container" >
+      <div class= "row-1">
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+      </div>
+      <div class= "row-2">
+        <div class="button-container"><button class = "button"value = "x"></button></div>
+        <div class="button-container"><button class = "button"value = "x"></button></div>
+        <div class="button-container"><button class = "button"value = "x"></button></div>
+      </div>
+      <div class= "row-3">
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+        <div class="button-container"><button class = "button" value = "x"></button></div>
+      </div>
     </div>
+    <h3>Score</h3>
+    <div class = "score-div" >
+    <div class = "red-score">0</div>
+    <div class = "blue-score">0</div>
+    </div>
+    </>
   );
 }
 

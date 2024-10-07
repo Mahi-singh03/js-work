@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+.button{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: 1px 1px black;
+}
+.button:hover{
+    height: 90px;
+    width: 90px;
+    border-radius: 25px;
+    box-shadow: 0px 0px
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+h3{
+    text-align: center;
+}
+
+.score-div{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-score{
+    margin: 30px;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #e62121;
+}
+.blue-score{
+    margin: 30px;
+    margin-top: 10px;
+    font-size: 50px; 
+    color: rgb(70, 70, 214);
+}
