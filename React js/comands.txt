@@ -1,0 +1,8 @@
+To crete the new react app:
+   
+   npx create-react-app my-app 
+
+      * { "my-app" can be replace with name of React app you want to create }
+      * { use " . " at hte place of "my-app" to create the app inside the current folder}
+      * { the name of the app canot contain capital letters }
+
