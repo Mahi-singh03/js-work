@@ -1,3 +1,6 @@
+CREATE THE NEW REACT APP :
+
+
 To crete the new react app:
    
    npx create-react-app my-app 
@@ -10,3 +13,28 @@ To start the server :
  
 Step [1] : open the integrarted terminal in the app folder
 step [2] : type the comand " npm start "
+
+
+
+
+
+RE-INSTALL DEPENDENCIES FOLDER :
+
+
+when you commit the code to git, it ignores the dependencies folder.
+when you clone the project the project is cloned without the dependencies folder. 
+you can restrore the all the deppendencies by the command :
+
+   * npm install
+this command install all the deppendencies.
+   
+   *  npm start
+thos command runs the server  
+
+
+
+
+
+UPLOAD THE PROJECT TO GIT :
+
+STEP [1] : s
