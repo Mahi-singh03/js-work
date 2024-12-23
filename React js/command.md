@@ -19,8 +19,14 @@ STEP 2 ) To start the server :
 
 TROUBLESHOOTINIG
 -
-the troubleshootinng for ll the potential problm occurs in order to install the new React App :
 
+
+
+
+
+the troubleshootinng for ll the potential problm occurs in order to install the new React App :
+    
+     npm install web-vitals
      npm config get registry
      npm config set registry http://registry.npmjs.org
      npm cache clean --force 
