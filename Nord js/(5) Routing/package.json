@@ -1,0 +1,21 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "description": "this is the routing Example",
+  "main": "Routing.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hi"
+  },
+  "keywords": [
+    "hi"
+  ],
+  "author": "Mahi singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

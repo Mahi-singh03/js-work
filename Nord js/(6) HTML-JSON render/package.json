@@ -1,0 +1,17 @@
+{
+  "name": "render",
+  "version": "1.0.0",
+  "description": "this is the jsson to demonstrating the render of HTML and JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "keywords": [
+    "hi"
+  ],
+  "author": "mahi Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
