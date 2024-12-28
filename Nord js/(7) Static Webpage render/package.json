@@ -1,0 +1,17 @@
+{
+  "name": "static-webpages",
+  "version": "1.0.0",
+  "description": "this is the demonstration of static webpages",
+  "main": "index.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "keywords": [
+    "hi"
+  ],
+  "author": "Mahi singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
