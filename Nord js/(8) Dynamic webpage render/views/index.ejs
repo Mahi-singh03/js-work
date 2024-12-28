@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My EJS Page</title>
+</head>
+<body>
+  <h1>My name is <%= name %></h1>
+  <h2>I am <%= age %> years old</h2>
+  <h2>My hobbies include:</h2>
+  <ul>
+    <% hobbies.forEach(function(hobby) { %>
+      <li><%= hobby %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
