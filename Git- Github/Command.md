@@ -165,3 +165,168 @@ Branches
     - you can also view the complete branches list using the command
 
             git branch
+
+
+git diff
+--
+
+
+1. comparison between staging area
+
+    - this command gives the changes in code between intital files and file you stages after the changes.
+
+            git diff --staged
+
+2. comparison betweenn the branches
+
+    - this command  is used to compare the changes between the changes of branches
+
+            git diff <barnch-1> <branch-2>
+            OR
+            git diff banch-1..branch-2
+
+3. comparision of specific commit
+
+    - you can compare specific commit of file using the commit hash
+
+            git diff <hash-1> <hash-2>
+            OR
+            git diff hash-1..hash-2
+
+
+git stash
+--
+
+1. stash a changes
+
+    - you can stash the changes before swtch the branch without committing the chages using command.
+
+            git stash 
+
+2. stash the changes with the name
+
+    - you can also stash many changes by giving the each stash a particular name.
+
+            git stash sve <stash name>
+
+3. view the stash list
+
+    - you can view the stash list using the command
+
+            git stash list
+    
+ 4. apply the stash
+
+    - you can also apply the stash to the code using the command
+
+            git stash apply
+
+5. apply the  particular stash
+
+    - you can also apply any particular stash to the code using the command
+    - you can se the satch number tuing the commnad
+
+            git stach list
+
+    - you cn apply that numbered stah using command
+
+            git stash apply stash @{-}
+
+6. apply and drop the stach
+
+    - in canses you want to apply the stash and also remove the stash from the stash list tou an use the ommand:
+
+            git stash pop 
+
+7. droping the stash
+
+    - you can drop the stash without appling t the code using the command:
+
+            git stash drop
+
+8. Applying stash to the particular branch 
+
+    - you can apply the stash to the particularto any branch using the command:
+
+            git stash apply stash@{-} <branch-name> 
+
+
+Git tag 
+--
+
+1. creating a git tag
+
+    - you can create a tag using the command
+
+            git tag <tag-name>
+    
+    - this tag is attached to the any particular commit.
+
+2. create anotate tag 
+
+    - anotate tag means you can add the additional meta tag
+
+    - you can add the anotate tag in the code using the command
+
+
+            git tag -a <tag-name> -m <addition data/ messege>
+
+
+3. list of all tag
+
+    - you can create a number of tag in the code
+    - you can view the list of tahg in the code using the command:
+
+            git tag
+
+4. tag a specific tag
+
+    - you can create a specific tag  to a partcular commit using the command
+
+            git tag <tag-name> <commit-hash> 
+
+
+Git rebase
+--
+
+1. switch to the branch you want to rebase
+
+    - it is must that you should be at the ultenaate nranch branch you want to rebase
+    - command you can use with te rebase is
+
+            git switch <ulterna-branch>
+
+
+2. use the rebase
+
+    - to rebase the ullternate brranch use teh command
+
+            git rebase maste
+
+    - if the conflict arrives you can resolve the conflict 
+
+Git reflog
+--
+
+1. view the reflog
+
+     - you can view the history of log using the command
+
+            git reflog
+
+2. find any commit
+
+    - you can find any particular commit using the command:
+
+            git reflog <commit-hash>
+
+3. recove lost commit and changes
+
+    - in case you mess up you can reset the code agin to any last commit you made.
+    - this si very helpfull in the incases of code brackdown
+    - you can achieve this using teh command:
+
+            git reflog <ccommit-hash> 
+            git restet --hard <commit-hash>
+    
+    - use this command carefully because this command in ir- resvesible.
