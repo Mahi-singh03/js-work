@@ -61,6 +61,15 @@ Git rebase
 - with rebase you can get all the latest changes of master branch in the ulternate branch without merging the branches.
 - with this ypu can remove the additional commit that polute the commit log 
 
+
+
+Git reflog
+--
+
+- this command is used to see the history  of all the commits
+- it allows the changes you made to the directory
+- you can roleback to the cretain commit in teh code in the case of mess ups using this command.
+
 Short terms
 --
 
