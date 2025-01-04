@@ -32,6 +32,9 @@ the troubleshootinng for ll the potential problm occurs in order to install the 
      npm cache clean --force 
      npm install -g npm@latest
 
+     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+     
 RE-INSTALL DEPENDENCIES FOLDER :
 -
 
