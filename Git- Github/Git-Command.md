@@ -65,6 +65,15 @@ Flow of the git
 
             git log
 
+( 4 ) github push
+--
+1. Command
+
+    - for this the connection between the git and github repositiory should be initilized first.
+    - ou ca push the codeto the remote repositiory with the command
+
+            git push
+
 
 
 Additionals
