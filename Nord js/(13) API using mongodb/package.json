@@ -1,0 +1,17 @@
+{
+  "name": "api-with-mongodb",
+  "version": "1.0.0",
+  "description": "this demonstrat the API using mongobd",
+  "main": "index.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "keywords": [
+    "hi"
+  ],
+  "author": "Manoj Barhpagga",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  }
+}
