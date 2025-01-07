@@ -1,109 +1,97 @@
-// const mongoose = require('mongoose');
+const express = require("express");
+const mongoose_connection = require("./mongoose_functions/connection"); // Import the connection function
+const { validations, validationResult } = require("./mongoose_functions/validations"); // Import validations
+const mongoose = require("mongoose");
 
-// async function connect() {  // this function will connect to the
-//   try {
-//     await mongoose.connect('mongodb+srv://MahiSingh:mahi2012@cluster0.ddxzk.mongodb.net/Dtatbase-for-tutorial?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
-//     console.log('Connected to the database');
+mongoose_connection(); // Connect to the database once when the app starts
 
-    // const validation = new mongoose.Schema({  // this is the schema and the validation. now we can use this schema to validate the data before inserting it into the database now we cannot insert the data without the name, age and email or we can say that the name, age and email are the required fields. and also we cannot nsert dats otheer than the name, age and email.
-    //     name: String,
-    //     age: Number,
-    //     // email: String
-    // })
+const app = express();
+app.use(express.json());
 
+// Define the schema
+const dataSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  age: { type: Number, required: true },
+  email: { type: String, required: true }
+}, {
+  versionKey: false // Disable `__v` field
+});
 
-//     // model is the class that will create the object of the schema
+// Define the model
+const DataModel = mongoose.model('Dtatbase-for-tutorial', dataSchema, 'std');
 
-//     const studentModel = mongoose.model('Dtatbase-for-tutorial', validation, 'std');  // this is the model that will create the object of the schema. and the object of the schema will be used to insert the data into the database. and the student is the name of the collection in the database.
+// GET API - Retrieve all data
+app.get("/", async (req, res) => {
+  try {
+    const data = await DataModel.find();
+    res.status(200).json(data);
+  } catch (err) {
+    console.error("Error retrieving data:", err);
+    res.status(500).send("Error retrieving data");
+  }
+});
 
-//     const data = new studentModel({  // this is the object of the schema that will be used to insert the data into the database.
-//         name: 'Nimo',
-//         age: 21,
-//         email: 12
-//         // email: 'nimo098@gmil.com'
-//     })
+// POST API - Add new data
+app.post("/", validations, async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
 
-//     let r = await data.save();
-//     console.log('Data saved:', r);
-//   } catch (err) {
-//     console.error('Error:', err);
-//   } finally {
-//     // Close the connection
-//     mongoose.connection.close();
-//   }
-// }
+  const data = new DataModel(req.body);
+  try {
+    await data.save();
+    console.warn("Data is saved");
+    res.status(201).send("Data saved successfully");
+  } catch (err) {
+    console.error("Error saving data:", err);
+    res.status(500).send("Error saving data");
+  }
+});
 
-// connect()  // this will call the function connect() and connect to the database
+// PUT API - Update data by name
+app.put("/", async (req, res) => {
+  const filter = { name: req.body.name };
+  const update = { 
+    age: req.body.age, 
+    email: req.body.email 
+  };
 
+  try {
+    const updatedData = await DataModel.updateOne(filter, { $set: update });
 
+    if (updatedData.matchedCount === 0) {
+      return res.status(404).send("Data not found to update");
+    }
 
+    console.warn("Data is updated");
+    res.status(200).send("Data updated successfully");
+  } catch (err) {
+    console.error("Error updating data:", err);
+    res.status(500).send("Error updating data");
+  }
+});
 
+// DELETE API - Delete data by name
+app.delete("/", async (req, res) => {
+  const filter = { name: req.body.name };
 
+  try {
+    const deletedData = await DataModel.deleteOne(filter);
 
+    if (deletedData.deletedCount === 0) {
+      return res.status(404).send("Data not found to delete");
+    }
 
+    console.warn("Data is deleted");
+    res.status(200).send("Data deleted successfully");
+  } catch (err) {
+    console.error("Error deleting data:", err);
+    res.status(500).send("Error deleting data");
+  }
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// curd operation in the mongoose
-
-
-
-
-
-
-// view the database
-
-// we use the get api
-// foe this par we dont need the mongoose 
-// we use the coneection.js from db connection to connect to teh mongodb
-
-// const connect = require('./db functions/connection').connect;
-// const express = require('express');
-
-// const app = express()
-
-
-// app.get('/', async (req, res) => {
-//     const collection = await connect(); // connect to the database and get the collection
-
-//     const data = await collection.find().toArray(); // fetching the data from the collection
-//     console.log(data); // logging the data
-    
-//     res.send(data);
-// });
-
-
-
-
-
-
-
-// add new document to the database
-
-
-
-const express = require("express")
-const mongoose_connection = require("./mongose functions/conection").connect
-const validation = require("./mongose functions/validtauion").validations
- 
-const app = express()
-
-
-app.post("/",(req, res)=>{
-
-})
-app.listen(3000, ()=>{
-  console.warn("the server s running at loclhost:3000")
-})
+// Start the server
+app.listen(3000, () => {
+  console.log("Server is running at http://localhost:3000");
+});
