@@ -1,0 +1,104 @@
+.nav-bar {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial, sans-serif';
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow the content to wrap for small screens */
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  /* Remove flex: 1 to prevent shifting the brand to the center */
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+  justify-content: flex-start; /* Align links to the start */
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #eaeaea;
+  color: #111;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none; /* Hide links initially */
+    width: 100%;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center align items */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show links when toggled */
+  }
+
+  .nav-link {
+    padding: 8px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    font-size: 20px;
+    flex: none; /* Prevent the brand from taking up all space */
+  }
+}
+
+/* Hamburger menu for mobile */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.nav-logo {
+  height: 20px;  /* Adjust the size to fit your design */
+  width: auto;   /* Maintain the aspect ratio of the logo */
+  margin-right: 10px;  /* Space between logo and brand text */
+  border-radius: 8px;  /* Optional: rounded corners for the logo */
+}

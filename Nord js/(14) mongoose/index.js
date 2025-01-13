@@ -20,6 +20,10 @@ const dataSchema = new mongoose.Schema({
 // Define the model
 const DataModel = mongoose.model('Dtatbase-for-tutorial', dataSchema, 'std');
 
+
+
+
+
 // GET API - Retrieve all data
 app.get("/", async (req, res) => {
   try {
@@ -30,6 +34,11 @@ app.get("/", async (req, res) => {
     res.status(500).send("Error retrieving data");
   }
 });
+
+
+
+
+
 
 // POST API - Add new data
 app.post("/", validations, async (req, res) => {
@@ -48,6 +57,13 @@ app.post("/", validations, async (req, res) => {
     res.status(500).send("Error saving data");
   }
 });
+
+
+
+
+
+
+
 
 // PUT API - Update data by name
 app.put("/", async (req, res) => {
@@ -71,6 +87,13 @@ app.put("/", async (req, res) => {
     res.status(500).send("Error updating data");
   }
 });
+
+
+
+
+
+
+
 
 // DELETE API - Delete data by name
 app.delete("/", async (req, res) => {

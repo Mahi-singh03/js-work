@@ -1,0 +1,39 @@
+.detail-bar {
+  padding: 0px 20px; /* Adjust padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+}
+
+.greeting {
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  font-style: italic;
+  margin: 0; /* Reset margin to avoid pushing content */
+}
+
+.whatsapp {
+  display: flex; /* Ensures the icon and text are aligned */
+  align-items: center;
+}
+
+.whatsapp a {
+  color: #25d366;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp a::before {
+  margin-right: 8px;
+}
+
+.whatsapp a:hover {
+  color: #128c7e;
+}

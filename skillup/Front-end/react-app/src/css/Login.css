@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 16px;
+}
+
+form {
+  background: hsl(240, 12%, 90%);
+  width: 360px;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-40%);
+  background: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+}
+
+.toggle-password:focus {
+  outline: none;
+  background: #ffffff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form p {
+  text-align: center;
+  font-size: 14px;
+}
+
+form p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+form p a:hover {
+  text-decoration: underline;
+}
