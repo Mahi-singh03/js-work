@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/contect.css'
+import '../css/contectANDfooter.css'
 
 const Contact = () => {
     return(

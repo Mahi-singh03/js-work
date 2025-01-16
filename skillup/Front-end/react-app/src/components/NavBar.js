@@ -51,8 +51,8 @@ const NavBar = () => {
             <>
               <Link className="nav-link" to="/">Home</Link>
               <Link className="nav-link" to="/Courses">Courses</Link>
-              <Link className="nav-link" to="/Specials">Register</Link>
-              <Link className="nav-link" to="/Orders">Orders</Link>
+              <Link className="nav-link" to="/Registration">Register</Link>
+              <Link className="nav-link" to="/Gallery">Gallery</Link> 
               <Link className="nav-link" to="/Profile">Profile</Link>
               <Link className="nav-link" to="/Logout" onClick={handleLogout}>Log out</Link>
             </>

@@ -14,7 +14,7 @@ const DetailBar = () => {
       <p className="greeting">Hello, {userName}</p>
       <div className="whatsapp">
         <a
-          href={`https://wa.me/1234567890`}
+          href={`https://wa.me/9781278770`}
           target="_blank"
           rel="noopener noreferrer"
         >

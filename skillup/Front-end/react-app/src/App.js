@@ -10,6 +10,7 @@ import DetailBar from './components/Detail-Bar';
 import Contact from './components/contact';
 import Home from './components/Home';
 import Courses from './components/Courses'
+import Registration from './components/Registration';
 
 
 function App() {
@@ -38,8 +39,8 @@ function App() {
           <Route element={<PrivateComponent />}>
             <Route path="/" element={<Home />} />
             <Route path="/Courses" element={<Courses />} />
-            <Route path="/Register" element={<h1>Register</h1>} />
-            <Route path="/Orders" element={<h1>Orders</h1>} />
+            <Route path="/Registration" element={< Registration/>} />
+            <Route path="/Gallery" element={<h1>Gallery</h1>} />
             <Route path="/Logout" element={<h1>Logout</h1>} />
             <Route path="/Profile" element={<h1>Profile</h1>} />
           </Route>

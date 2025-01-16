@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import image from "../Images/b3.jpg";
 import image_2 from "../Images/React.jpg";
 import "../css/Home.css";
@@ -64,7 +65,7 @@ const App = () => {
               <div className="card-body">
                 <h5 className="card-title">Course {index + 1}</h5>
                 <p className="card-text">Details of course {index + 1}.</p>
-                <a href="#" className="btn btn-primary">Register</a>
+                <Link to="/Registration" className="btn btn-primary">Register</Link>
               </div>
             </div>
           ))}
@@ -75,11 +76,11 @@ const App = () => {
 
       <h2>About Us</h2>
 
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales tortor vel neque facilisis suscipit. Fusce faucibus lacus a urna tristique pellentesque quis id augue. Donec dolor augue, sodales maximus aliquet at, venenatis non leo. Nullam nibh leo, pretium ac egestas non, dictum vel ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac augue condimentum, dictum risus nec, mattis ipsum. Fusce condimentum urna vitae aliquam rutrum. Cras libero tortor, interdum sed feugiat in, feugiat eget diam. Phasellus pellentesque nibh a est auctor, id viverra magna blandit. In consectetur elit nec leo dignissim, eget mattis ex efficitur. Maecenas gravida cursus sapien. Pellentesque molestie felis quis nunc varius porta. In cursus malesuada turpis, convallis accumsan dolor eleifend ac. Suspendisse nec odio et risus feugiat elementum vel et massa.</p>
+      <figure className="text-center">
+        <blockquote className="blockquote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales tortor vel neque facilisis suscipit...</p>
         </blockquote>
-        <figcaption class="blockquote-footer">
+        <figcaption className="blockquote-footer">
           Someone famous in <cite title="Source Title">Source Title</cite>
         </figcaption>
       </figure>

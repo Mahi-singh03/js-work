@@ -1,4 +1,5 @@
 import React from 'react'; // Correct
+import "../css/contectANDfooter.css"
 
 
 
