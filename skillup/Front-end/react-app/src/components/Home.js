@@ -54,7 +54,7 @@ const App = () => {
         </button>
       </div>
 
-      <h2> Available Courses</h2>
+      <h2>Available Courses</h2>
 
       <div className="card-slider-container">
         <button className="scroll-btn left" onClick={scrollLeft}>&lt;</button>
@@ -72,7 +72,10 @@ const App = () => {
         </div>
         <button className="scroll-btn right" onClick={scrollRight}>&gt;</button>
       </div>
-      <button className="see-all-btn">See All Courses</button>
+
+      <div className="see-all-btn-container">
+        <Link to="/courses" className="see-all-btn ">See All Courses</Link>
+      </div>
 
       <h2>About Us</h2>
 

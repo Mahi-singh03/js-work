@@ -41,30 +41,54 @@ const NavBar = () => {
       <div className="nav-container">
         <Link className="nav-brand" to="/">
           <img src={logo} alt="Restaurant Logo" className="nav-logo" />
-          Skill-Up
         </Link>
         <div className="hamburger-menu" onClick={toggleMenu}>
           ☰
         </div>
         <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
+          <Link
+            className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+            to="/"
+          >
+            Home
+          </Link>
+          <Link
+            className={`nav-link ${location.pathname === '/Courses' ? 'active' : ''}`}
+            to="/Courses"
+          >
+            Courses
+          </Link>
+          <Link
+            className={`nav-link ${location.pathname === '/Registration' ? 'active' : ''}`}
+            to="/Registration"
+          >
+            Register
+          </Link>
+          <Link
+            className={`nav-link ${location.pathname === '/Gallery' ? 'active' : ''}`}
+            to="/Gallery"
+          >
+            Gallery
+          </Link>
+          {isLoggedIn && (
+            <Link
+              className={`nav-link ${location.pathname === '/Profile' ? 'active' : ''}`}
+              to="/Profile"
+            >
+              Profile
+            </Link>
+          )}
           {isLoggedIn ? (
-            <>
-              <Link className="nav-link" to="/">Home</Link>
-              <Link className="nav-link" to="/Courses">Courses</Link>
-              <Link className="nav-link" to="/Registration">Register</Link>
-              <Link className="nav-link" to="/Gallery">Gallery</Link> 
-              <Link className="nav-link" to="/Profile">Profile</Link>
-              <Link className="nav-link" to="/Logout" onClick={handleLogout}>Log out</Link>
-            </>
+            <Link className="nav-link" to="/Logout" onClick={handleLogout}>
+              Log out
+            </Link>
           ) : (
-            <>
-              {location.pathname !== '/Login' && (
-                <Link className="nav-link" to="/Login">Login</Link>
-              )}
-              {location.pathname !== '/SignUp' && (
-                <Link className="nav-link" to="/SignUp">Sign Up</Link>
-              )}
-            </>
+            <Link
+              className={`nav-link ${location.pathname === '/Login' ? 'active' : ''}`}
+              to="/Login"
+            >
+              Login
+            </Link>
           )}
         </div>
       </div>
